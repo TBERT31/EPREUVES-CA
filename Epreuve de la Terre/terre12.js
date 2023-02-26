@@ -23,10 +23,16 @@ if(minutes > 59){
 
 // Resolution
 function transform12To24(hours, minutes){
-    if(meridiem === "AM"){
+    if(meridiem === "AM" && (hours !== 12 && minutes !==0)){
         console.log(`${hours < 10 ? `0${hours}` : hours}:${minutes<10 ? `0${minutes}` : minutes}`);
-    }else if(meridiem === "PM"){
+    }else if(meridiem === "PM" && (hours !== 0 && minutes !==0)){
         console.log(`${hours+12}:${minutes<10 ? `0${minutes}` : minutes}`);
+    }else if(meridiem === "AM" && (hours === 12 && minutes ===0)){
+        console.log(`00:00`);
+    }else if(meridiem === "PM" && (hours === 12 && minutes ===0)){
+        console.log(`12:00`);
+    }else{
+        console.log("erreur.")
     }
 }
 
