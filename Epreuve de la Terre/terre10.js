@@ -1,10 +1,13 @@
+//input control
 if(process.argv.length !== 3 || isNaN(parseInt(process.argv[2])) ){
     console.log("erreur.");
     return;
 }
 
+// variables
 let number = parseInt(process.argv[2]);
 
+//Resolution
 function estUnNombrePremier(n) {
     if (n <= 1) {
         console.log(`Le paramètre doit être suppérieur à 1.`)
@@ -21,5 +24,6 @@ function estUnNombrePremier(n) {
     console.log(`Oui, ${n} est un nombre premier.`)
 }
   
+//Result
 estUnNombrePremier(number);
 

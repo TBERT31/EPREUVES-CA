@@ -1,8 +1,13 @@
+//Variable
 let argArray = process.argv;
 
+//Return
 for(let i = 2; i< argArray.length ; i++){
     console.log(argArray[i]);
 }
+
+
+
 
 // var str = "Je suis solide !"
 
