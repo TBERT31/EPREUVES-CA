@@ -16,18 +16,22 @@ for(let i = 2; i < process.argv.length; i++){
 
 
 
-function my_bubble_sort(arr) {
+function my_select_sort(arr) {
     let len = arr.length;
     for (let i = 0; i < len; i++) {
-      for (let j = 0; j < len - 1; j++) {
-        if (arr[j] > arr[j + 1]) {
-          let temp = arr[j];
-          arr[j] = arr[j + 1];
-          arr[j + 1] = temp;
+      let min = i;
+      for (let j = i + 1; j < len; j++) {
+        if (arr[j] < arr[min]) {
+          min = j;
         }
+      }
+      if (i !== min) {
+        let temp = arr[i];
+        arr[i] = arr[min];
+        arr[min] = temp;
       }
     }
     return arr;
   }
 
-  console.log(my_bubble_sort(arrayNumber));
+  console.log(my_select_sort(arrayNumber));
