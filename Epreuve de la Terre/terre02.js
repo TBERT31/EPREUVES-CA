@@ -2,7 +2,7 @@
 let argArray = process.argv;
 
 //Return
-for(let i = 2; i< argArray.length ; i++){
+for(let i = 2; i < argArray.length ; i++){
     console.log(argArray[i]);
 }
 
