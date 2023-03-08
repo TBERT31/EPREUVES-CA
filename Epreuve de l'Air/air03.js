@@ -1,5 +1,5 @@
 // Control Input
-if(process.argv.length > 3 ){
+if(process.argv.length < 3 ){
   console.log("At least two argument please");
   return;
 }

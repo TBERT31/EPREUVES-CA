@@ -4,9 +4,9 @@ if(process.argv.length !== 4 ){
     return;
 }
 
-let stringToCut = process.argv[3];
+let stringToCut = process.argv[2];
 
-let separator = process.argv[4];
+let separator = process.argv[3];
 
 // Parsing
 function cutString(stringToCut, separator){

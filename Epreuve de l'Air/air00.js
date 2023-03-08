@@ -4,17 +4,18 @@ if(process.argv.length !== 3 ){
     return;
 }
 
-let stringToCut = process.argv[3];
+let stringToCut = process.argv[2];
 
 
 // Parsing
 function cutString(stringToCut){
-    let newArr = stringToCut.split(/[\s\t\n]+/);;
+    let newArr = stringToCut.split(/[\s\t\n]+/);
 
     for(let i = 0; i < newArr.length; i++){
         console.log(newArr[i]);
     }
 }
+
 
 // Return
 cutString(stringToCut);

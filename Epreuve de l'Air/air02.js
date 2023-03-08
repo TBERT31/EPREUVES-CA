@@ -1,5 +1,5 @@
 // Control Input
-if(process.argv.length > 4 ){
+if(process.argv.length < 4 ){
     console.log("At least three argument please, Strings to concat + a separator");
     return;
 }
@@ -10,7 +10,7 @@ for(let i = 2; i < process.argv.length-1;i++){
     arrayToConcat.push(process.argv[i]);
 }
 
-let separator = process.argv[ProgressEvent.argv.length-1];
+let separator = process.argv[process.argv.length-1];
 
 // Parsing
 function concatString(arrayToConcat, separator){
