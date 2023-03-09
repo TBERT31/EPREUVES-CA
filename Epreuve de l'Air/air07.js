@@ -1,6 +1,6 @@
 // Control Input
 if(process.argv.length < 4 ){
-    console.log("At least two argument please, numbers + an operation");
+    console.log("At least two argument please, sorted list and number to insert");
     return;
 }
 
